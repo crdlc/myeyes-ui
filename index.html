@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Eyes</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script defer type="text/javascript" src="vendor/js/es6-promise.min.js"></script>
+    <script defer type="text/javascript" src="vendor/js/lazy_loader.js"></script>
+    <script defer type="text/javascript" src="js/myEyesApp.js"></script>
+  </head>
+  <body data-view="login">
+    <header class="title">
+      <img src="images/logo.png"></img>
+    </header>
+
+    <form class="login">
+      <label for="username">Your user name</label>
+      <div class="input-group">
+        <input id="username" type="text" class="form-control" placeholder="Username" aria-describedby="username">
+        <span class="input-group-addon" id="usernameSuffix"></span>
+      </div>
+
+      <label for="password">Your password</label>
+      <div class="input-group input-group-expanded">
+        <input id="password" type="password" class="form-control" placeholder="Password" aria-describedby="password">
+      </div>
+
+      <button class="btn btn-blue btn-padding ctaarrow-white btn-login">Sign in</button>
+    </form>
+
+    <div class="alert alert-danger alert-dismissible authentication-error fade in" hidden role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Authentication failed!</strong> Please try again
+    </div>
+  </body>
+</html>

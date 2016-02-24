@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>My Eyes</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/myeyes.css">
+
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBqQJ9edvvq1D5dZx49f0yu4elXmO8xhac"></script>
+
+    <script defer type="text/javascript" src="vendor/js/es6-promise.min.js"></script>
+    <script defer type="text/javascript" src="vendor/js/lazy_loader.js"></script>
+    <script defer type="text/javascript" src="js/myEyesApp.js"></script>
+  </head>
+  <body data-view="myeyes">
+    <div class="main">
+      <header>
+        <a href="index.html" aria-controls="exit">Logout</a>
+        <span class="userMail"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> demo@myeyes.com</span>
+      </header>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#map" data-view="map" aria-controls="map" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Map</a></li>
+        <li role="presentation"><a href="#events" data-view="events" aria-controls="events" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Events</a></li>
+        <li role="presentation"><a href="#pics" data-view="pics" aria-controls="pics" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Pics</a></li>
+        <li role="presentation"><a href="#chat" data-view="chat" aria-controls="chat" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Message</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="map" role="tabpanel" class="tab-pane fade in active">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div id="userLocation"></div>
+            </div>
+          </div>
+        </div>
+        <div id="events" role="tabpanel" class="tab-pane fade">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div id="eventsList" class="list-group"></div>
+            </div>
+          </div>
+        </div>
+        <div id="pics" role="tabpanel" class="tab-pane fade">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div id="screenshotsList" class="row"></div>
+            </div>
+          </div>
+        </div>
+        <div id="chat" role="tabpanel" class="tab-pane fade">
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

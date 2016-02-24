@@ -1,0 +1,27 @@
+{
+  "coordinates": {
+    "lat": 41.6132640,
+    "lng": -4.6847260
+  },
+
+  "events": [
+    {
+      "description": "Baldosas descolocadas",
+      "lat": 41.6133640,
+      "lng": -4.6847260
+    },
+    {
+      "description": "Pavimento agrietado",
+      "lat": 41.6132640,
+      "lng": -4.6847260
+    }
+  ],
+
+  "screenshots": [
+    "http://static3.absolutvalladolid.com/wp-content/uploads/2008/09/calle-santiago-01a-custom.jpg",
+    "https://valladolidcalleacalle.files.wordpress.com/2010/12/santiago-princ.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/3/3c/Valladolid_calle_Juan_Mambrilla_portada_de_dovelas_y_casas_modernas_lou.jpg",
+    "https://valladolidenimagenes.files.wordpress.com/2014/07/dsc_2788.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/d/db/Calle_Regalado_y_Catedral_de_Valladolid_-_Encuentro_en_Valladolid_julio_de_2012_(148).JPG"
+  ]
+}
