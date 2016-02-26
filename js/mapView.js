@@ -10,16 +10,14 @@
       return;
     }
 
-    map.setCenter(coordinates);
-    marker && marker.setMap(null);
-
+    marker ? marker.setMap(null) : map.setCenter(coordinates);
     marker = new google.maps.Marker({
       position: coordinates,
-      title: 'User is here',
-      animation: google.maps.Animation.DROP
+      title: 'User is here'
     });
 
     marker.setMap(map);
+    map.panTo(coordinates);
   }
 
   var init = function(model) {

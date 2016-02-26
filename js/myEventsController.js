@@ -5,14 +5,14 @@
     LazyLoader.dependencyLoad([
       'js/helpers/request.js',
       'js/models/firebase.js',
-      'js/eventsView.js'
+      'js/myEventsView.js'
     ]).then(function() {
       FirebaseModel.init();
-      EventsView.init(FirebaseModel);
+      MyEventsView.init(FirebaseModel);
     });
   };
 
-  global.EventsController = {
+  global.MyEventsController = {
     init: init
   };
 

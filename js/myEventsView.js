@@ -26,11 +26,11 @@
   };
 
   var renderEvents = function(events) {
-    var target = document.getElementById('eventsList');
+    var target = document.getElementById('myEventsList');
     target.innerHTML = '';
 
     events.forEach(function(event) {
-      target.appendChild(createEventNode(event));
+      event.id === 'device_rasp_pi' && target.appendChild(createEventNode(event));
     });
   }
 
@@ -48,7 +48,7 @@
     });
   };
 
-  global.EventsView = {
+  global.MyEventsView = {
     init: init
   };
 

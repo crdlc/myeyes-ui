@@ -26,13 +26,15 @@
     <div class="main">
       <header>
         <a href="index.html" aria-controls="exit">Logout</a>
-        <span class="userMail"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> demo@myeyes.com</span>
+        <span class="userMail"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> steve@myeyes.com</span>
       </header>
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#map" data-view="map" aria-controls="map" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Map</a></li>
-        <li role="presentation"><a href="#events" data-view="events" aria-controls="events" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Events</a></li>
-        <li role="presentation"><a href="#pics" data-view="pics" aria-controls="pics" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Pics</a></li>
-        <li role="presentation"><a href="#chat" data-view="chat" aria-controls="chat" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Message</a></li>
+        <li role="presentation" class="active"><a href="#map" data-view="map" aria-controls="map" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Where is Steve?</a></li>
+        <li role="presentation"><a href="#myevents" data-view="myEvents" aria-controls="myevents" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Steve's Events</a></li>
+        <li role="presentation"><a href="#pics" data-view="pics" aria-controls="pics" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Pics</a></li>
+        <li role="presentation"><a href="#chat" data-view="chat" aria-controls="chat" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Message</a></li>
+
+        <li role="presentation" class="allevents"><a href="#allevents" data-view="allEvents" aria-controls="allevents" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> Global Events</a></li>
       </ul>
 
       <div class="tab-content">
@@ -43,10 +45,10 @@
             </div>
           </div>
         </div>
-        <div id="events" role="tabpanel" class="tab-pane fade">
+        <div id="myevents" role="tabpanel" class="tab-pane fade">
           <div class="panel panel-default">
             <div class="panel-body">
-              <div id="eventsList" class="list-group"></div>
+              <div id="myEventsList" class="list-group"></div>
             </div>
           </div>
         </div>
@@ -62,6 +64,31 @@
             <div class="panel-body">
 
             </div>
+          </div>
+        </div>
+        <div id="allevents" role="tabpanel" class="tab-pane fade">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span><a href="#" id="seeAllEventsMap"> See all events on a map</a>
+              <div id="allEventsList" class="list-group"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modal-map" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">All events</h4>
+          </div>
+          <div class="modal-body">
+            <p id="allEventsLocation"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-white btn-padding" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>

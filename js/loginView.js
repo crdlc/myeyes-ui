@@ -1,8 +1,8 @@
 !function(global) {
   'use strict';
 
-  var USER = 'demo';
-  var PASS = 'demo1';
+  var USER = 'steve';
+  var PASS = 'steve1';
   var DOMAIN = 'myeyes.com';
 
   var loginButton = null;
