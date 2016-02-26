@@ -2,7 +2,7 @@
 !function(global) {
   'use strict';
 
-  var createScreenshotNode = function(uri) {
+  var createScreenshotNode = function(screenshot) {
     var container = document.createElement('div');
     container.classList.add('col-lg-3', 'col-md-4', 'col-xs-6', 'thumb');
 
@@ -11,7 +11,8 @@
 
     var img = document.createElement('img');
     img.classList.add('img-responsive');
-    img.src = uri;
+    console.log(screenshot)
+    img.src = 'data:image/jpeg;base64,' + screenshot.data;
 
     anchor.appendChild(img);
     container.appendChild(anchor);
@@ -19,12 +20,12 @@
     return container;
   };
 
-  var renderScreenshots = function(uris) {
+  var renderScreenshots = function(screenshots) {
     var target = document.getElementById('screenshotsList');
     target.innerHTML = '';
 
-    uris.forEach(function(uri) {
-      target.appendChild(createScreenshotNode(uri));
+    Object.keys(screenshots).forEach(function(key) {
+      target.appendChild(createScreenshotNode(screenshots[key]));
     });
   }
 
