@@ -94,3 +94,26 @@ header a:link {
 #allEventsLocation {
   height: 400px;
 }
+
+#chat form {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+#chat form label {
+  width: 100%;
+  text-align: left;
+}
+
+#chat form .input-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.message-sent {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+}

@@ -9,6 +9,8 @@
   var events;
   var screenshots;
 
+  var sessionRef
+
   var callHandlers = function(handlers, values) {
     var coordinatesValues = Promise.resolve(values || {});
     handlers && handlers.forEach(function(aHandler) {
@@ -26,7 +28,7 @@
     LazyLoader.dependencyLoad([
       'https://cdn.firebase.com/js/client/2.3.1/firebase.js'
     ]).then(function() {
-      var sessionRef = new Firebase(URL);
+      sessionRef = new Firebase(URL);
 
       var coordinatesRef = sessionRef.child('coordinates');
       coordinatesRef.on('value', function coordinatesUpdated(snapshot) {
@@ -109,6 +111,9 @@
     },
     get screenshots() {
       return screenshots;
+    },
+    set message(value) {
+      sessionRef.child('message').set(value);
     }
   };
 
