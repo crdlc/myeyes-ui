@@ -6,12 +6,12 @@ Página web de gestión del proyecto [MyEyes](https://github.com/unblind/unblind
 
 **Acceso a la aplicación**
 
-![captura myeyes 3](./myeyesui3.png)
+<center><img src="myeyesui3.png" align="center" width="720" ></center>
 
 **Ubicación de las gafas**
 
-![captura myeyes 1](./myeyesui1.png)
+<center><img src="myeyesui1.png" align="center" width="720" ></center>
 
 **Fotos tomadas por las gafas**
 
-![captura myeyes 2](./myeyesui2.png)
+<center><img src="myeyesui2.png" align="center" width="720" ></center>
